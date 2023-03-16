@@ -1,4 +1,4 @@
-# Quiz Hero Now Zero
+# private repo te problem hoyeche
 
 ### Private Repo Link
 Click Here to create [private repo](https://classroom.github.com/a/xhXEYY1C)
