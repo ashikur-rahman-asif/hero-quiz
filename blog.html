@@ -28,7 +28,36 @@
 </head>
 
 <body>
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button onclick="home()" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Home
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
 
+    <main class="px-2 md:px-20 lg:px-52">
+        <!-- question 1 -->
+        <section class="mt-10">
+            <div class="grid grid-cols-1 gap-4 text-justify">
+                <div class="border-solid border-2 p-4 bg-slate-100">
+                    <h3 class="text-2xl">1.Difference between map,filter,foreach and find </h3>
+                    <p class="mt-2">In JavaScript, map, filter, forEach, and find are all methods that can be called on arrays to manipulate or iterate over them.</p>
+                    
+                    <p>
+                       Map is a method that creates a new array by calling a provided function on every element in the original array. The provided function takes the current element, its index, and the original array as arguments, and should return a new value to be included in the new array.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
