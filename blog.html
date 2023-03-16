@@ -49,22 +49,85 @@
             <div class="grid grid-cols-1 gap-4 text-justify">
                 <div class="border-solid border-2 p-4 bg-slate-100">
                     <h3 class="text-2xl">1.Difference between map,filter,foreach and find </h3>
-                    <p class="mt-2">In JavaScript, map, filter, forEach, and find are all methods that can be called on arrays to manipulate or iterate over them.</p>
-                    
-                    
-                       <article class="mt-2">
-                        =><span class="text-lg">Map</span> is a method that creates a new array by calling a provided function on every element in the original array. The provided function takes the current element, its index, and the original array as arguments, and should return a new value to be included in the new array.
-                       </article>
-                       <article class="mt-2">
-                        =><span class="text-lg">Filter</span> is a method that creates a new array with all elements that pass the test implemented by the provided function. The provided function takes the current element, its index, and the original array as arguments, and should return a boolean value indicating whether the element should be included in the new array.
-                       </article>
-                       <article class="mt-2">
-                        =><span class="text-lg">ForEach</span>  is a method that calls a provided function on every element in the array, but does not create a new array. The provided function takes the current element, its index, and the original array as arguments, but does not return anything.
-                       </article>
-                       <article class="mt-2">
-                        =><span class="text-lg">Find</span> is a method that returns the value of the first element in the array that satisfies the provided testing function. The provided function takes the current element, its index, and the original array as arguments, and should return a boolean value indicating whether the element satisfies the search criteria.
-                       </article>
-                    
+                    <p class="mt-2">In JavaScript, map, filter, forEach, and find are all methods that can be called on
+                        arrays to manipulate or iterate over them.</p>
+
+
+                    <article class="mt-2">
+                        =><span class="text-lg">Map</span> is a method that creates a new array by calling a provided
+                        function on every element in the original array. The provided function takes the current
+                        element, its index, and the original array as arguments, and should return a new value to be
+                        included in the new array.
+                    </article>
+                    <article class="mt-2">
+                        =><span class="text-lg">Filter</span> is a method that creates a new array with all elements
+                        that pass the test implemented by the provided function. The provided function takes the current
+                        element, its index, and the original array as arguments, and should return a boolean value
+                        indicating whether the element should be included in the new array.
+                    </article>
+                    <article class="mt-2">
+                        =><span class="text-lg">ForEach</span> is a method that calls a provided function on every
+                        element in the array, but does not create a new array. The provided function takes the current
+                        element, its index, and the original array as arguments, but does not return anything.
+                    </article>
+                    <article class="mt-2">
+                        =><span class="text-lg">Find</span> is a method that returns the value of the first element in
+                        the array that satisfies the provided testing function. The provided function takes the current
+                        element, its index, and the original array as arguments, and should return a boolean value
+                        indicating whether the element satisfies the search criteria.
+                    </article>
+
+                </div>
+                <div class="border-solid border-2 p-4 bg-slate-100">
+                    <h3 class="text-2xl">2.Difference between local storage,session storage,cookies</h3>
+                    <p class="mt-2">In web development, there are several ways to store data locally on the client-side,
+                        such as using Local Storage, Session Storage, and Cookies. Each of these methods has its own
+                        unique features and use cases.</p>
+
+                    <article class="mt-2">
+                        =><span class="text-lg">Local Storage</span> is a way to store key-value pairs in the browser,
+                        which persists even after the browser is closed. The data stored in Local Storage is available
+                        across all tabs and windows of the same origin. It provides a larger storage limit than Cookies,
+                        usually up to 5-10 MB. Local Storage data can be accessed using the localStorage object in
+                        JavaScript.
+                    </article>
+                    <article class="mt-2">
+                        =><span class="text-lg">Session Storage:</span> is similar to Local Storage, but the data is
+                        only stored for the duration of the current browsing session. Once the user closes the browser
+                        or navigates away from the current website, the data is cleared. Session Storage data can also
+                        be accessed using the sessionStorage object in JavaScript.
+                    </article>
+                    <article class="mt-2">
+                        =><span class="text-lg">Cookies</span> are small text files that are stored on the user's device
+                        by the web server. They are commonly used for maintaining user sessions, storing user
+                        preferences, and tracking user behavior. Cookies can be set with an expiration time, after which
+                        they will be automatically deleted. Cookies can be accessed using the document.cookie property
+                        in JavaScript.
+                    </article>
+                </div>
+                <div class="border-solid border-2 p-4 bg-slate-100">
+                    <h3 class="text-2xl">3.Write down even loop and its work procedure</h3>
+                    <article class="mt-2">
+                        In JavaScript, the Event Loop is a mechanism for managing the execution of asynchronous code. It
+                        is responsible for handling the queue of tasks and events that need to be executed, and ensuring
+                        that they are executed in the correct order.
+
+                        The Event Loop works as follows:
+
+                        1.When the browser encounters an asynchronous operation, such as a timer, an HTTP request, or a
+                        user input event, it is added to a queue of pending tasks. <br>
+
+                        2.The Event Loop continuously checks if the call stack is empty, meaning that all synchronous code
+                        has finished executing. If the call stack is empty, the Event Loop will take the first task from
+                        the queue and add it to the call stack for execution. <br>
+
+                        3.Asynchronous operations that have completed their execution, such as the timer callback, are
+                        also added to a separate queue called the callback queue. <br>
+
+                        4.Once the call stack is empty, the Event Loop checks if there are any functions waiting in the
+                        callback queue. If so, it will take the first function and add it to the call stack for
+                        execution.
+                    </article>
                 </div>
             </div>
         </section>
