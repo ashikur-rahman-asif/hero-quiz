@@ -117,7 +117,8 @@
                         1.When the browser encounters an asynchronous operation, such as a timer, an HTTP request, or a
                         user input event, it is added to a queue of pending tasks. <br>
 
-                        2.The Event Loop continuously checks if the call stack is empty, meaning that all synchronous code
+                        2.The Event Loop continuously checks if the call stack is empty, meaning that all synchronous
+                        code
                         has finished executing. If the call stack is empty, the Event Loop will take the first task from
                         the queue and add it to the call stack for execution. <br>
 
@@ -132,13 +133,17 @@
                 <div class="border-solid border-2 p-4 bg-slate-100">
                     <h3 class="text-2xl">4.QuizTimer()</h3>
                     <p>
-                        This is a custom function designed to implement a timer for a quiz application. The purpose of this function is to start a countdown timer when the user begins a quiz and to end the quiz when the time runs out.
+                        This is a custom function designed to implement a timer for a quiz application. The purpose of
+                        this function is to start a countdown timer when the user begins a quiz and to end the quiz when
+                        the time runs out.
                     </p>
                 </div>
                 <div class="border-solid border-2 p-4 bg-slate-100">
                     <h3 class="text-2xl">5.chooseQuiz()</h3>
                     <p>
-                        This is a custom function. It takes two parameter to calculate the Quiz. It checks the given quiz wrong or right. After checking this function call the displayAnswer function and show the result
+                        This is a custom function. It takes two parameter to calculate the Quiz. It checks the given
+                        quiz wrong or right. After checking this function call the displayAnswer function and show the
+                        result
                     </p>
                 </div>
             </div>
@@ -146,9 +151,15 @@
         <!-- footer started  -->
         <footer class="py-10 text-center text-sm">
             Copyright © 2023 Quiz Hero All Rights Reserved.
-          </footer>
-          <!-- footer end  -->
+        </footer>
+        <!-- footer end  -->
     </main>
+
+    <script>
+        function home() {
+            window.location.href = "./index.html";
+        }
+    </script>
 </body>
 
 </html>
